@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Color Example</title>
+
+    <style>
+        body{
+            background-color:#f4f4f4;
+            color:#333;
+            font-family:Arial, sans-serif;
+            margin:0;
+            padding:20px;
+        }
+
+        .card{
+            background-color:rgba(0,128,128,0.1);
+            color:hsl(180,100%,25%);
+            padding:20px;
+            border-radius:10px;
+            max-width:500px;
+            margin:20px auto;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .hero{
+            background-image:url("https://picsum.photos/id/1018/800/400");
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            color:white;
+            height:300px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            border-radius:10px;
+            margin-bottom:20px;
+        }
+
+        .hero h1{
+            background:transparent;
+            padding:10px 20px;
+            border-radius:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>Welcome to My Website</h1>
+</section>
+
+<div class="card">
+    <h2>Card Title</h2>
+
+    <p>
+        This card uses a faint teal background created with
+        <strong>rgba()</strong> and a dark teal text color using
+        <strong>hsl()</strong>.
+    </p>
+</div>
+
+</body>
+</html>

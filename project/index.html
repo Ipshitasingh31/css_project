@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verdant Plant Studio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-mark">🌿</span>
+                <span class="brand-name">Verdant</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Care</a>
+                <a href="#">Schedule</a>
+                <a href="#">Journal</a>
+                <a href="#">Contact</a>
+                <a href="#" class="nav-cta">Join</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">INDOOR PLANT STUDIO</p>
+                    <h1>Grow a room that <span>breathes</span> with you.</h1>
+                    <p class="hero-text">
+                        Verdant is a tiny studio pairing hardy houseplants with simple,
+                        honest care advice. No jargon—just greener days.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">Start your Collection</a>
+                        <a href="#" class="btn btn-secondary">Learn the Basics</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-glow"></div>
+                        <div class="plant-illustration">
+                            <div class="leaf leaf-one"></div>
+                            <div class="leaf leaf-two"></div>
+                            <div class="leaf leaf-three"></div>
+                            <div class="stem"></div>
+                            <div class="pot"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="three-asks">
+                <div class="section-header">
+                    <h2>Three Things Every Plant Asks For</h2>
+                </div>
+                <div class="cards-grid">
+                    <article class="info-card">
+                        <div class="icon">🌞</div>
+                        <h3>Light</h3>
+                        <p>
+                            Indirect sunlight is the sweetest for indoor greenery. Keep plants near
+                            bright, filtered windows and avoid harsh midday beams.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <div class="icon">💧</div>
+                        <h3>Water</h3>
+                        <p>
+                            Water gently and regularly, allowing soil to dry slightly between sessions.
+                            A steady rhythm keeps roots happy without overwatering.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <div class="icon">🌡</div>
+                        <h3>Warmth</h3>
+                        <p>
+                            Keep plants cozy in a warm corner. Most houseplants love a stable 18–24°C
+                            with a touch of humidity for fresh, glowing growth.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="guide-table">
+                <div class="section-header">
+                    <h2>Plant care guide</h2>
+                </div>
+                <div class="table-wrap">
+                    <table class="guide-table-inner">
+                        <thead>
+                            <tr>
+                                <th>Plant</th>
+                                <th>Needs</th>
+                                <th>Care schedule</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Snake Plant</td>
+                                <td>Low light, dry soil</td>
+                                <td>Water every 2–3 weeks</td>
+                                <td>Let the soil dry almost fully between waterings.</td>
+                            </tr>
+                            <tr>
+                                <td>Monstera</td>
+                                <td>Bright indirect light</td>
+                                <td>Water once a week</td>
+                                <td>Keep humidity moderate and wipe large leaves often.</td>
+                            </tr>
+                            <tr>
+                                <td>Pothos</td>
+                                <td>Medium light, moist soil</td>
+                                <td>Water every 7–10 days</td>
+                                <td>Trim trailing vines and avoid soggy soil.</td>
+                            </tr>
+                            <tr>
+                                <td>Spider Plant</td>
+                                <td>Indirect light, well-drained soil</td>
+                                <td>Water every 10–14 days</td>
+                                <td>Fresh soil and bright shade keep the plant thriving.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="registration">
+                <div class="section-header registration-header">
+                    <h2>Plant Registration</h2>
+                    <p>
+                        Share your plant details and we’ll help you keep it thriving with gentle
+                        studio care.
+                    </p>
+                </div>
+                <div class="registration-grid">
+                    <form id="plantForm" class="plant-form">
+                        <div class="form-row">
+                            <label for="fullName">Full Name</label>
+                            <input id="fullName" name="fullName" type="text" required placeholder="Your name" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" required placeholder="example@verdant.studio" />
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="tel" required placeholder="+1 234 567 890" />
+                        </div>
+                        <div class="form-row">
+                            <label for="plantName">Plant Name</label>
+                            <input id="plantName" name="plantName" type="text" required placeholder="Monstera" />
+                        </div>
+                        <div class="form-row">
+                            <label for="plantType">Plant Type</label>
+                            <select id="plantType" name="plantType" required>
+                                <option value="" disabled selected>Select plant type</option>
+                                <option>Foliage</option>
+                                <option>Succulent</option>
+                                <option>Blooming</option>
+                                <option>Air plant</option>
+                                <option>Herb</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="plantAge">Plant Age</label>
+                            <input id="plantAge" name="plantAge" type="text" placeholder="e.g. 6 months" />
+                        </div>
+                        <div class="form-row">
+                            <label for="location">Location</label>
+                            <input id="location" name="location" type="text" placeholder="Living room, balcony..." />
+                        </div>
+                        <div class="form-row form-full">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your plant’s habits or your care routine."></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-reset">Reset</button>
+                        </div>
+                    </form>
+
+                    <div class="success-card hidden" id="successCard">
+                        <div class="success-badge">Form Submitted Successfully ✅</div>
+                        <div class="success-details">
+                            <p><strong>Name:</strong> <span id="successName">—</span></p>
+                            <p><strong>Plant Name:</strong> <span id="successPlantName">—</span></p>
+                            <p><strong>Plant Type:</strong> <span id="successPlantType">—</span></p>
+                            <p><strong>Phone:</strong> <span id="successPhone">—</span></p>
+                            <p><strong>Email:</strong> <span id="successEmail">—</span></p>
+                            <p><strong>Location:</strong> <span id="successLocation">—</span></p>
+                            <p><strong>Notes:</strong> <span id="successNotes">—</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">© 2026 Verdant Plant Studio</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
